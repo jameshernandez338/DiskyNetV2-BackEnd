@@ -1,0 +1,12 @@
+syntax : glob
+.vs/
+.github/
+DiskyNet.Api/bin/
+DiskyNet.Api/obj/
+DiskyNet.Application/bin/
+DiskyNet.Application/obj/
+DiskyNet.Domain/bin/
+DiskyNet.Domain/obj/
+DiskyNet.Infrastructure/bin/
+DiskyNet.Infrastructure/obj/
+

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="DiskyNet.Api/DiskyNet.Api.csproj" />
+  <Project Path="DiskyNet.Application/DiskyNet.Application.csproj" Id="23939a00-12a1-4d14-b57f-2cda645f8c1a" />
+  <Project Path="DiskyNet.Domain/DiskyNet.Domain.csproj" Id="058e7226-bc8c-4728-a421-274453e35658" />
+  <Project Path="DiskyNet.Infrastructure/DiskyNet.Infrastructure.csproj" Id="50d01676-992e-4ce6-adc2-090697d25884" />
+</Solution>

@@ -1,0 +1,48 @@
+﻿// Common global usings for the API project to reduce repetitive using directives
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.IdentityModel.Tokens;
+global using Microsoft.OpenApi;
+global using DiskyNet.Api.Middlewares;
+// API Services
+global using DiskyNet.Api.Services;
+// Application implementation namespaces (concrete services)
+global using DiskyNet.Application.Auth;
+// Application service and interface namespaces used by Program.cs
+global using DiskyNet.Application.Auth.Interfaces;
+global using DiskyNet.Application.Common.Interfaces;
+global using DiskyNet.Application.Common.Services;
+global using DiskyNet.Application.Role.Interfaces;
+global using DiskyNet.Application.Role.Services;
+global using DiskyNet.Application.User.Interfaces;
+global using DiskyNet.Application.User.Services;
+global using DiskyNet.Application.Permission.Interfaces;
+global using DiskyNet.Application.Permission.Services;
+global using DiskyNet.Application.Menu;
+global using DiskyNet.Application.Menu.Interfaces;
+global using DiskyNet.Application.PendingDelivery.Interfaces;
+global using DiskyNet.Application.PendingDelivery.Services;
+global using DiskyNet.Application.Secrets;
+// Domain interfaces
+global using DiskyNet.Domain.Auth.Interfaces;
+global using DiskyNet.Domain.User.Interfaces;
+global using DiskyNet.Domain.Common.Interfaces;
+global using DiskyNet.Domain.Role.Interfaces;
+global using DiskyNet.Domain.Permission.Interfaces;
+global using DiskyNet.Domain.Menu.Interfaces;
+global using DiskyNet.Domain.PendingDelivery.Interfaces;
+// Infrastructure types used in DI registration
+global using DiskyNet.Infrastructure.Auth;
+global using DiskyNet.Infrastructure.Configuration;
+global using DiskyNet.Infrastructure.Persistence.Dapper;
+global using DiskyNet.Infrastructure.Persistence.Repositories.Auth;
+global using DiskyNet.Infrastructure.Persistence.Repositories.Common;
+global using DiskyNet.Infrastructure.Persistence.Repositories.User;
+global using DiskyNet.Infrastructure.Persistence.Repositories.Role;
+global using DiskyNet.Infrastructure.Persistence.Repositories.Permission;
+global using DiskyNet.Infrastructure.Persistence.Repositories.Menu;
+global using DiskyNet.Infrastructure.Persistence.Repositories.PendingDelivery;
+//global using DiskyNet.Infrastructure.Services;
+global using Serilog;
+global using System;
+global using System.IO;
+global using System.Text;
