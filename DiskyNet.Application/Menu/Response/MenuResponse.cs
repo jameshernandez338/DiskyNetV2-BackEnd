@@ -1,8 +1,9 @@
 ﻿namespace DiskyNet.Application.Menu.Response
 {
-    public record MenuResponse(
+    public sealed record MenuResponse(
         int Id,
         string MenuName,
+        string? Code,
         string? MenuRoute,
         string? Icon,
         int DisplayOrder,

@@ -21,6 +21,8 @@ global using DiskyNet.Application.Menu;
 global using DiskyNet.Application.Menu.Interfaces;
 global using DiskyNet.Application.PendingDelivery.Interfaces;
 global using DiskyNet.Application.PendingDelivery.Services;
+global using DiskyNet.Application.Tables.Interfaces;
+global using DiskyNet.Application.Tables.Services;
 global using DiskyNet.Application.Secrets;
 // Domain interfaces
 global using DiskyNet.Domain.Auth.Interfaces;
@@ -30,6 +32,7 @@ global using DiskyNet.Domain.Role.Interfaces;
 global using DiskyNet.Domain.Permission.Interfaces;
 global using DiskyNet.Domain.Menu.Interfaces;
 global using DiskyNet.Domain.PendingDelivery.Interfaces;
+global using DiskyNet.Domain.Tables.Interfaces;
 // Infrastructure types used in DI registration
 global using DiskyNet.Infrastructure.Auth;
 global using DiskyNet.Infrastructure.Configuration;
@@ -41,6 +44,7 @@ global using DiskyNet.Infrastructure.Persistence.Repositories.Role;
 global using DiskyNet.Infrastructure.Persistence.Repositories.Permission;
 global using DiskyNet.Infrastructure.Persistence.Repositories.Menu;
 global using DiskyNet.Infrastructure.Persistence.Repositories.PendingDelivery;
+global using DiskyNet.Infrastructure.Persistence.Repositories.Tables;
 //global using DiskyNet.Infrastructure.Services;
 global using Serilog;
 global using System;

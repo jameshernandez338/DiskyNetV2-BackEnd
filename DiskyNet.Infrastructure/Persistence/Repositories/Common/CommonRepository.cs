@@ -46,6 +46,12 @@ namespace DiskyNet.Infrastructure.Persistence.Repositories.Common
                         Name AS Text
                     FROM Roles 
                     ORDER BY Id",
+                "expirecategory" => @"
+                    SELECT 
+                        Category_Id AS Value, 
+                        Category_Names AS Text
+                    FROM Category 
+                    ORDER BY Category_Names",
 
                 _ => throw new DomainException($"Combo type '{comboType}' not supported")
             };

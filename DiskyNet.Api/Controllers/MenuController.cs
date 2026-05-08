@@ -19,12 +19,7 @@ namespace DiskyNet.Api.Controllers
         [HttpGet("me")]
         public async Task<IActionResult> GetMenusByUser(CancellationToken cancellationToken)
         {
-            var userId = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-            if (string.IsNullOrWhiteSpace(userId))
-                return BadRequest(new { message = "No se pudo obtener el usuario." });
-
-            var menus = await _menuService.GetMenusByUserAsync(userId, cancellationToken);
+            var menus = await _menuService.GetMenusByUserAsync(cancellationToken);
             return Ok(menus);
         }
     }

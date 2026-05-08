@@ -14,7 +14,7 @@ namespace DiskyNet.Infrastructure.Persistence.Repositories.Menu
             _dbExecutor = dbExecutor;
         }
 
-        public async Task<IEnumerable<MenuEntity>> GetMenusByUserAsync(string userId, CancellationToken cancellationToken)
+        public async Task<IEnumerable<MenuEntity>> GetMenusByUserAsync(int userId, CancellationToken cancellationToken)
         {
             const string sql = @"
                 SELECT 
